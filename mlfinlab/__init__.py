@@ -20,7 +20,7 @@ import mlfinlab.ensemble as ensemble
 import mlfinlab.portfolio_optimization as portfolio_optimization
 import mlfinlab.clustering as clustering
 import mlfinlab.backtest_statistics.statistics as backtest_statistics
-
+import mlfinlab.data_structures_snapshot_tick as data_structures_snapshot_tick
 
 # Sponsorship notification
 # try:
