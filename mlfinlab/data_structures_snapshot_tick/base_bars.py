@@ -84,7 +84,7 @@ class BaseBars(ABC):
         # Read csv in batches
         count = 0
         final_bars = []
-        cols = ['date_time', 'tick_num', 'open', 'high', 'low', 'close', 'volume', 'cum_volume', 'cum_buy_volume', 'cum_ticks',
+        cols = ['date_time', 'tick_num', 'open', 'high', 'low', 'close', 'volume', 'cum_buy_volume', 'cum_ticks',
                 'cum_dollar_value']
         for batch in self._batch_iterator(file_path_or_df):
             if verbose:  # pragma: no cover
