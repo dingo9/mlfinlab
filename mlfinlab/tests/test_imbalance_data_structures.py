@@ -34,13 +34,13 @@ class TestDataStructures(unittest.TestCase):
 
         db1, _ = ds.get_ema_dollar_imbalance_bars(self.path, exp_num_ticks_init=exp_num_ticks_init,
                                                   expected_imbalance_window=10000,
-                                                  num_prev_bars=num_prev_bars, batch_size=2e7, verbose=False, )
+                                                  num_prev_bars=num_prev_bars, batch_size=50, verbose=True )
         db2, _ = ds.get_ema_dollar_imbalance_bars(self.path, exp_num_ticks_init=exp_num_ticks_init,
                                                   expected_imbalance_window=10000,
                                                   num_prev_bars=num_prev_bars, batch_size=50, verbose=False)
         db3, _ = ds.get_ema_dollar_imbalance_bars(self.path, exp_num_ticks_init=exp_num_ticks_init,
                                                   expected_imbalance_window=10000,
-                                                  num_prev_bars=num_prev_bars, batch_size=10, verbose=False)
+                                                  num_prev_bars=num_prev_bars, batch_size=10, verbose=True)
         ds.get_ema_dollar_imbalance_bars(self.path, exp_num_ticks_init=exp_num_ticks_init,
                                          expected_imbalance_window=10000,
                                          num_prev_bars=num_prev_bars, batch_size=50, verbose=False,
